@@ -1,4 +1,4 @@
-# Portfolio Personel
+# Portfolio Personnel
 
 [https://amathie.vercel.app/](https://amathie.vercel.app/) | Hosted on Vercel
 
