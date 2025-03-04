@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Antoine Mathie | Portfolio",
-  description: "Portfolio de Thomas Dubois, étudiant en informatique",
+  description: "Portfolio de Antoine Mathie, étudiant en informatique",
 }
 
 export default function RootLayout({
@@ -17,7 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      import { Analytics } from "@vercel/analytics/react"{children}</body>
     </html>
   )
 }
