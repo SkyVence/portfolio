@@ -11,11 +11,12 @@ export function Hero() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Antoine Mathie</h1>
-            <p className="text-xl text-muted-foreground">Étudiant en Informatique en recherche d'alternance</p>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Antoine Mathié</h1>
+            <p className="text-xl text-muted-foreground">Étudiant en informatique en recherche d'alternance</p>
           </div>
           <p className="text-muted-foreground max-w-[600px]">
-            Passionné par le développement web.. [A finir]
+            Passionné par la programmation et le développement web, je suis actuellement en recherche d'une alternance pour intégrer un BTS SIO en option SLAM. 
+            Je suis curieux et j'aime trouver une solution aux problèmes que je rencontre.
           </p>
           <div className="flex gap-4">
             <Button asChild>
@@ -67,7 +68,7 @@ export function Hero() {
               <span>Bordeaux, France</span>
             </div>
             <p className="font-medium mt-2">Lycée Gustave Eiffel</p>
-            <p className="text-sm text-muted-foreground">En preparation d'un BTS SIO Option SLAM</p>
+            <p className="text-sm text-muted-foreground">En préparation d'un BTS SIO Option SLAM</p>
           </CardContent>
         </Card>
         <Card>

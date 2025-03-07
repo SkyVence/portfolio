@@ -24,7 +24,7 @@ export function Projects() {
       bannerGradient: "bg-gradient-to-br from-orange-500 to-red-600",
       bannerText: "Manga Scan",
       technologies: ["React", "Node.js", "MongoDB", "JwT", "ExpressJS", "NextJS", "Docker"],
-      codeLink: "#",
+      codeLink: "https://github.com/SkyVence/openmediascan",
       demoLink: "#",
     },
 

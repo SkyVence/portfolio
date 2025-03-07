@@ -3,7 +3,7 @@ import { ExperienceCard } from "./experience-card"
 export function Experience() {
   const experiences = [
     {
-      title: "CDD - Equiper polyvalent",
+      title: "CDD - Equipier polyvalent",
       company: "Leclerc, Talence",
       year: "Fevrier - 2025",
       description:
@@ -39,7 +39,7 @@ export function Experience() {
   return (
     <section id="experience" className="container py-16 space-y-12">
       <div className="space-y-2 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Expérience</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Expériences</h2>
         <p className="text-muted-foreground mx-auto max-w-[700px]">Mon parcours professionnel et mes stages.</p>
       </div>
 

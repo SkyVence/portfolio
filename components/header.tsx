@@ -5,6 +5,41 @@ import { useState } from "react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDownloading, setIsDownloading] = useState(false)
+
+  const handleDownload = async () => {
+    try {
+      setIsDownloading(true)
+
+      const fullpath = `/cv/cv_amathie.pdf`
+
+      const response = await fetch(fullpath)
+
+      if (!response.ok) {
+        throw new Error("Failed to download file")
+      }
+      
+      const blob = await response.blob()
+
+      const url = window.URL.createObjectURL(blob)
+
+      const a = document.createElement("a")
+      a.style.display = "none"
+      a.href = url
+
+      a.download = fullpath.split("/cv/").pop() || "cv_amathie.pdf"
+
+      document.body.appendChild(a)
+      a.click()
+
+      window.URL.revokeObjectURL(url)
+      document.body.removeChild(a)
+    } catch (err) {
+      console.error("Download error:", err)
+    } finally {
+      setIsDownloading(false)
+    }
+  }
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -43,9 +78,9 @@ export function Header() {
           </a>
         </nav>
         <div className="flex items-center gap-4">
-          <Button variant="outline" size="sm" className="hidden md:flex">
+          <Button variant="outline" size="sm" className="hidden md:flex" onClick={handleDownload} disabled={isDownloading}>
             <Download className="mr-2 h-4 w-4" />
-            CV
+            {isDownloading ? "Téléchargement..." : "Télécharger CV"}
           </Button>
           <Button variant="outline" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span className="sr-only">Toggle menu</span>
