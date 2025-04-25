@@ -9,12 +9,12 @@ export function Projects() {
       title: "Avims",
       subtitle: "Gestion d'inventaire spécialisée sur le matériel audio-visuel",
       description:
-        "Conception et développement d'une application de gestion d'inventaire pour du matériel audio-visuel destinée à un service opérationnel.",
+        "Conception et développement d'une application de gestion d'inventaire pour du matériel audio-visuel destinée à un service opérationnel. Utiliser par le pole technique operationnel de Europa Organisations pour la gestion de leur matériel audio-visuel et IT",
       bannerGradient: "bg-gradient-to-br from-blue-500 to-purple-600",
       bannerText: "Gestion d'inventaire",
       technologies: ["React", "NextJS", "PostgreSQL", "ClerkAuthentication"],
       codeLink: "https://github.com/SkyVence/project-avims",
-      demoLink: "#",
+      demoLink: "#DemoLinkUnavailable",
     },
     {
       title: "OpenMediaScan",
