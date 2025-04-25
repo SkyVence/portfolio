@@ -6,25 +6,25 @@ import { ProjectCard } from "./project-card"
 export function Projects() {
   const projects = [
     {
-      title: "Application de gestion d'inventaire",
+      title: "Avims",
       subtitle: "Gestion d'inventaire spécialisée sur le matériel audio-visuel",
       description:
         "Conception et développement d'une application de gestion d'inventaire pour du matériel audio-visuel destinée à un service opérationnel.",
       bannerGradient: "bg-gradient-to-br from-blue-500 to-purple-600",
       bannerText: "Gestion d'inventaire",
-      technologies: ["React", "NextJS", "SQL", "JwT"],
-      codeLink: "#",
+      technologies: ["React", "NextJS", "PostgreSQL", "ClerkAuthentication"],
+      codeLink: "https://github.com/SkyVence/project-avims",
       demoLink: "#",
     },
     {
-      title: "Plateforme de lecture de scan de manga",
-      subtitle: "Site de lecture de scan de manga avec contenu généré par utilisateur",
+      title: "OpenMediaScan",
+      subtitle: "Plateforme de lecture de scan de manga et webtoons traduit par la communauté",
       description:
         "Création d'une application FullStack destinée à la lecture de scans de mangas, manhwas et comics. Backend dédié utilisant ExpressJS, avec authentification et upload de contenu (images, PDF, etc.) vers S3. Frontend créé avec NextJS, ShadCN et TailwindCSS pour le style.",
       bannerGradient: "bg-gradient-to-br from-orange-500 to-red-600",
       bannerText: "Manga Scan",
-      technologies: ["React", "Node.js", "MongoDB", "JwT", "ExpressJS", "NextJS", "Docker"],
-      codeLink: "https://github.com/SkyVence/openmediascan",
+      technologies: ["React", "Node.js", "PostgreSQL", "Fastify", "NextJS", "Docker"],
+      codeLink: "https://github.com/SkyVence/roliascan",
       demoLink: "#",
     },
 
